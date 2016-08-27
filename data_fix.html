@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;  charset=utf-8" http-equiv="content-type">
+        <title>Commands decompressor</title>
+        <meta content="MrPingouin" name="author">
+        <meta content="Command decompressor" name="description">
+        
+        <link href="./style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <textarea id="areaIn" rows="5" cols="80"></textarea>
+        </div>
+        <div id="globalOption" class="parsable-option">
+			<!--
+			<div>
+				Command version:
+				<select var-name="cmdVersion" class="cmd-option">
+					<option value="50" selected selected="selected">1.8</option>
+					<option value="169">1.9</option>
+					<option value="510">1.10</option>
+					<option value="2000">1.11</option>
+				</select>
+			</div>
+			<div>
+				Fix version:
+				<select var-name="fixVersion" class="cmd-option">
+					<option value="50" selected>1.8</option>
+					<option value="169">1.9</option>
+					<option value="510">1.10</option>
+					<option value="2000" selected="selected">1.11</option>
+				</select>
+			</div>
+			-->
+        </div>
+        
+        <div id="submit_form">
+            <input type="submit" onclick="dataFixer()" value="Generate">
+			<input type="button" class="debug" onclick="tester()" value="Test"> (Only apply test fix)
+        </div >
+        
+        <div>
+            <textarea id="areaOut" rows="10" cols="80" readonly></textarea>
+        </div>
+        
+		<script type="text/javascript" src="./strint.js"></script>
+		<script type="text/javascript" src="./parser.js"></script>
+		<script type="text/javascript" src="./dataFixUtils.js"></script>
+		<script type="text/javascript" src="./dataFix.js"></script>
+		<script type="text/javascript" src="./dataWalker.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
+            
+    </body>
+</html>

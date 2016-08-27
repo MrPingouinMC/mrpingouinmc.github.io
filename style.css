@@ -1,0 +1,17 @@
+.block{
+    display:block;
+}
+
+#content{
+    display:inline;
+}
+
+.debug{
+    display:block;
+}
+
+.script-error{
+    box-shadow: 0px 0px 10px red;
+    outline:0px !important;
+    -webkit-appearance:none;
+}
